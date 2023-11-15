@@ -1,0 +1,141 @@
+header {
+    background-image: url("../images/lighthouselogo.jpg");
+    background-color: #8da4ce;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    display: flex;
+    color: rgb(94, 97, 97);
+    font-size: 70px;
+    font-family: fantasy;
+    justify-content:center;
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+    padding: 20px 5px;
+}
+h2 {
+    margin: 3.5% 0;
+    color: rgb(87, 87, 226);
+}
+
+#flexcontainer {
+    display: flex;
+
+}
+
+.tablet {
+    display: flex;
+}
+
+.tabletview-main{
+    margin-bottom: 20px;
+}
+
+nav ul li{
+    background-color: pink;
+    color:azure;
+    border: 1px azure solid ;
+    padding: 10px 75px 10px 5px;
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+}
+
+nav {
+    background-color: #94acdb;
+    /* padding-bottom: 40%; */
+}
+
+ul {
+    list-style: none;
+    margin: auto;
+    padding-left: 0;
+}
+
+footer{
+    background-color: #7b8fb4;
+    text-align: center;
+}
+
+footer > p {
+    padding: 10px 0px;
+    margin-top: 0;
+} 
+
+aside {
+    margin-top: 20px;
+    margin-right: 20px;
+    /* float: right; */
+}
+
+main {
+    margin: 10px 10px 0px 10px;
+}
+
+/* #format {
+    position: absolute;
+    bottom: 22%;
+    
+} */
+
+
+
+/* mobile responsive view */
+@media screen and (max-width: 759px) {
+    header {
+        background-position: top right;   
+    }
+    h1 {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(0, 0, 149);
+    }
+
+    #flexcontainer {
+        flex-direction: column;
+    }
+
+    .tablet{
+        flex-direction: column;
+    }
+
+    nav ul li{
+        background-color: #94acdb;
+        color:azure;
+        padding: 1% 1%;
+        text-align: left;
+    }
+
+    a{
+        font-size: x-large;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    main {
+        margin: 5px 0 0 0;
+    }
+}
+
+/* tablet responsive view */
+@media screen and (max-width: 1023px) and (min-width: 760px) {
+   #flexcontainer {
+    flex-flow: column wrap;
+   }
+
+   ul {
+    display: flex;
+    justify-content: center;
+   }
+
+   nav ul li {
+    border: none;
+    padding: 20px 40px;
+    margin: 10px 15px;
+   }
+
+}
